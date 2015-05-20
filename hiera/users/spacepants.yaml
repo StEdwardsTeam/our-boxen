@@ -1,0 +1,50 @@
+---
+atom::packages:
+  - atom-jasmine
+  - color-picker
+  - language-jade
+  - language-puppet
+  - linter
+  - linter-js-yaml
+  - linter-puppet-lint
+  - linter-ruby
+  - merge-conflicts
+  - minimap
+  - travis-ci-status
+
+# apps
+boxen::personal::homebrew_packages:
+  - bash-completion
+  - grc
+  - lua
+  - ngrep
+  - packer
+  - rename
+  - tree
+boxen::personal::osx_apps:
+  - 1password
+  - alfred
+  - atom
+  - bettertouchtool
+  - box-sync
+  - flux
+  - google-chrome
+  - graphviz
+  - intellij-idea
+  - iterm2
+  - limechat
+  - radiant-player
+  - remote-desktop-connection
+  - sizeup
+  - sketch
+  - slack
+  - sourcetree
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - xtrafinder
+
+# global defaults
+nodejs::global::version: "v0.10"
+python::global::version: "2.7.9"
+ruby::global::version: "2.1.2"
