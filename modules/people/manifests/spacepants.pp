@@ -20,7 +20,9 @@ class people::spacepants {
     source  => 'spacepants/dotfiles',
     require => File[$my]
   }
-
+  file { '/usr/local/bin':
+    ensure  => directory,
+  } ->
   repository { $gitfriendly:
     source  => 'jamiew/git-friendly',
   }
