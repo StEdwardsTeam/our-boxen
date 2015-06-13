@@ -43,6 +43,9 @@ boxen::personal::osx_apps:
   - virtualbox
   - xtrafinder
 
+# source dir
+boxen::config::srcdir: "/Users/%{::boxen_user}/code"
+
 # global defaults
 nodejs::global::version: "v0.10"
 python::global::version: "2.7.9"
