@@ -13,6 +13,11 @@ class people::spacepants {
   $z               = "${code}/z"
   $zsh             = "${z}/z.sh"
 
+  file { "$home/.hushlogin":
+    ensure => file,
+    mode => '0644',
+  }
+
   file { $my:
     ensure  => directory,
   }
