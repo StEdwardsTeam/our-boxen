@@ -27,12 +27,15 @@ boxen::personal::osx_apps:
   - atom
   - bettertouchtool
   - box-sync
+  - facter
   - flux
   - google-chrome
   - graphviz
+  - hiera
   - intellij-idea
   - iterm2
   - limechat
+  - puppet
   - radiant-player
   - sizeup
   - sketch
