@@ -52,23 +52,23 @@ class people::spacepants {
     require => Repository[$gitfriendly]
   }
 
-#  exec { 'dumb workaround until boxen fixes pip':
-#    command => 'sudo easy_install Pygments',
-#    creates => '/usr/local/bin/pygmentize'
-#  } ->
-#  repository { $pygments_style:
-#    source  => 'gthank/solarized-dark-pygments',
-#  }
-#  file { "${styles_dir}/solarized.py":
-#    ensure  => link,
-#    target  => "${pygments_style}/solarized.py",
-#    require => Repository[$pygments_style]
-#  }
-#  file { "${styles_dir}/solarized256.py":
-#    ensure  => link,
-#    target  => "${pygments_style}/solarized256.py",
-#    require => Repository[$pygments_style]
-#  }
+  exec { 'dumb workaround until boxen fixes pip':
+    command => 'sudo easy_install Pygments',
+    creates => '/usr/local/bin/pygmentize'
+  } ->
+  repository { $pygments_style:
+    source  => 'gthank/solarized-dark-pygments',
+  }
+  file { "${styles_dir}/solarized.py":
+    ensure  => link,
+    target  => "${pygments_style}/solarized.py",
+    require => Repository[$pygments_style]
+  }
+  file { "${styles_dir}/solarized256.py":
+    ensure  => link,
+    target  => "${pygments_style}/solarized256.py",
+    require => Repository[$pygments_style]
+  }
 
   repository { $z:
     source  => 'rupa/z',
@@ -82,14 +82,17 @@ class people::spacepants {
   package { 'ffmpeg':
     install_options => [ '--with-libvpx' ]
   }
-  package { 'wget':
-    install_options => [ '--with-iri' ]
-  }
+
+  nodejs::version { 'v0.12': }
 
   # old ass ruby for legacy puppet support
   ruby::version { '1.8.7': }
 
   homebrew::tap { 'homebrew/binary': }
+
+  include mysql
+  
+  include php::composer
 
   python::version { '2.7': }
 
