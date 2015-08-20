@@ -136,9 +136,5 @@ class people::spacepants {
 
   class { 'python::global': version => $python_version }
 
-  boxen::project { 'br-frontend-testing-demo':
-    nginx  => true,
-    source => 'sparkbox/br-frontend-testing-demo'
-  }
-
+  include projects::all
 }
