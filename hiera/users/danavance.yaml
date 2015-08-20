@@ -1,0 +1,10 @@
+---
+boxen::personal::osx_apps:
+  - 1password
+  - atom
+  - firefox
+  - google-chrome
+  - intellij-idea
+  - navicat-for-mysql
+  - slack
+  - sourcetree
