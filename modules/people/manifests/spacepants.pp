@@ -2,6 +2,10 @@ class people::spacepants {
 
   include python
 
+  $nodejs_version  = "0.10"
+  $python_version  = "2.7.8"
+  $ruby_version    = "2.1.2"
+
   $home            = "/Users/${::boxen_user}"
   $code            = "${home}/code"
   $my              = "${code}/my"
@@ -83,24 +87,54 @@ class people::spacepants {
     install_options => [ '--with-libvpx' ]
   }
 
-  nodejs::version { 'v0.12': }
-
   # old ass ruby for legacy puppet support
   ruby::version { '1.8.7': }
 
   homebrew::tap { 'homebrew/binary': }
 
   include mysql
-  
+
+  npm_module { "bower for ${nodejs_version}":
+    module       => 'bower',
+    version      => '~> 1.4.1',
+    node_version => $nodejs_version,
+  }
+
+  npm_module { "grunt for ${nodejs_version}":
+    module       => 'grunt',
+    version      => '~> 0.4.5',
+    node_version => $nodejs_version,
+  }
+
+  npm_module { "grunt-cli for ${nodejs_version}":
+    module       => 'grunt-cli',
+    version      => '~> 0.1.13',
+    node_version => $nodejs_version,
+  }
+
+  npm_module { "gulp for ${nodejs_version}":
+    module       => 'gulp',
+    version      => '~> 3.9.0',
+    node_version => $nodejs_version,
+  }
+
+  npm_module { "yeoman for ${nodejs_version}":
+    module       => 'yo',
+    version      => '~> 1.4.7',
+    node_version => $nodejs_version,
+  }
+
   include php::composer
 
-  python::version { '2.7': }
+  python::version { $python_version: }
 
-  python::package { "pygments for 2.7.8":
+  python::package { "pygments for $python_version":
     package => 'pygments',
-    python  => '2.7.8',
+    python  => $python_version,
     version => '>=2.0',
   }
+
+  class { 'python::global': version => $python_version }
 
   boxen::project { 'br-frontend-testing-demo':
     nginx  => true,

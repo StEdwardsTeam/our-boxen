@@ -51,6 +51,3 @@ boxen::config::srcdir: "/Users/%{::boxen_user}/code"
 
 # global defaults
 mysql::version: "5.6.25"
-nodejs::global::version: "v0.10"
-python::global::version: "2.7.9"
-ruby::global::version: "2.1.2"
