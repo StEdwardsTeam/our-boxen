@@ -1,0 +1,42 @@
+# Example template for PHP-FPM based Drupal projects
+#
+# The template which nginx uses within a boxen::project can be overridden
+# to a specific template such as this one.
+#
+# You will likely need to change both the root and SCRIPT_FILENAME parameters below
+# to match your setup
+#
+server {
+  access_log <%= scope.lookupvar "nginx::config::logdir" %>/<%= @name %>.access.log main;
+  listen 80;
+  root <%= @repo_dir %>/build/html;
+  server_name <%= @server_name %>;
+
+  client_max_body_size 50M;
+
+  error_page 500 502 503 504 /50x.html;
+
+  location / {
+    expires max;
+    index index.php;
+    try_files $uri $uri/ @rewrite;
+  }
+
+  location ~ \.php$ {
+    root <%= @repo_dir %>/build/html;
+    include <%= scope.lookupvar "nginx::config::configdir" %>/fastcgi_params;
+    keepalive_timeout 0;
+    fastcgi_pass unix:<%= scope.lookupvar "boxen::config::socketdir" %>/<%= @name %>;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    fastcgi_param PATH_INFO $fastcgi_script_name;
+    fastcgi_param ENVIRONMENT local;
+
+    fastcgi_read_timeout 3600s;
+    client_body_timeout 3600s;
+    send_timeout 3600s;
+  }
+
+  location @rewrite {
+    rewrite ^/(.*)$ /index.php?q=$1;
+  }
+}
