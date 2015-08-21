@@ -22,14 +22,10 @@ boxen::personal::homebrew_packages:
   - rename
   - tree
 boxen::personal::osx_apps:
-  - 1password
   - alfred
-  - atom
   - bettertouchtool
-  - box-sync
   - facter
   - flux
-  - google-chrome
   - graphviz
   - hiera
   - intellij-idea
@@ -37,10 +33,7 @@ boxen::personal::osx_apps:
   - limechat
   - puppet
   - radiant-player
-  - sizeup
   - sketch
-  - slack
-  - sourcetree
   - vagrant
   - vagrant-manager
   - virtualbox

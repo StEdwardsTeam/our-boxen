@@ -1,13 +1,8 @@
 ---
 boxen::personal::osx_apps:
-  - 1password
   - cornerstone
   - cyberduck
   - eclipse-java
-  - firefox
-  - google-chrome
   - intellij-idea
   - navicat-for-mysql
-  - slack
-  - sourcetree
   - textwrangler
