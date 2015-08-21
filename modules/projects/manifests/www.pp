@@ -1,5 +1,7 @@
 class projects::www {
 
+  include php::composer
+
   php::project { 'www':
     source        => 'StEdwardsTeam/freshform_www',
     mysql         => true,
