@@ -8,3 +8,6 @@ boxen::personal::osx_apps:
   - navicat-for-mysql
   - slack
   - sourcetree
+
+# source dir
+boxen::config::srcdir: "/Users/%{::boxen_user}/Sites"
