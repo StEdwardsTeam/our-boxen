@@ -1,0 +1,25 @@
+---
+boxen::personal::osx_apps:
+  - 1password
+  - alfred
+  - atom
+  - dash
+  - evernote
+  - firefox
+  - google-chrome
+  - imageoptim
+  - intellij-idea
+  - kaleidoscope
+  - mysqlworkbench
+  - sizeup
+  - slack
+  - snagit
+  - sourcetree
+  - sublime-text
+  - totalfinder
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+
+# source dir
+boxen::config::srcdir: "/Users/%{::boxen_user}/Sites"
