@@ -4,5 +4,5 @@ boxen::personal::osx_apps:
   - cyberduck
   - eclipse-java
   - intellij-idea
-  - navicat-for-mysql
+#  - navicat-for-mysql
   - textwrangler
