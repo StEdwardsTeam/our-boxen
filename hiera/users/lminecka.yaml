@@ -2,7 +2,6 @@
 boxen::personal::homebrew_packages:
   - grails22
   - maven
-  - wget
 boxen::personal::osx_apps:
   - bbedit
   - bittorrent-sync
