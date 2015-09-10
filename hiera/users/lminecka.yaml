@@ -10,3 +10,6 @@ boxen::personal::osx_apps:
   - intellij-idea
   - iterm2
   - mysqlworkbench
+
+# source dir
+boxen::config::srcdir: "/Users/%{::boxen_user}/Sites"
