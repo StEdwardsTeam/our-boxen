@@ -28,7 +28,7 @@ class people::spacepants {
   repository { $dotfiles:
     source  => 'spacepants/dotfiles',
     require => File[$my]
-  }
+  } ->
   file { '/usr/local/bin':
     ensure  => directory,
   } ->
@@ -54,6 +54,11 @@ class people::spacepants {
     ensure  => link,
     target  => "${gitfriendly}/push",
     require => Repository[$gitfriendly]
+  }
+  file { '/usr/local/bin/restart-bt':
+    ensure  => link,
+    target  => "${dotfiles}/restart-bt.sh",
+    require => File['/usr/local/bin']
   }
 
   exec { 'dumb workaround until boxen fixes pip':
