@@ -24,6 +24,7 @@ boxen::personal::homebrew_packages:
 boxen::personal::osx_apps:
   - alfred
   - bettertouchtool
+  - cheatsheet
   - facter
   - flux
   - graphviz
