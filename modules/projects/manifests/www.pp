@@ -8,4 +8,9 @@ class projects::www {
     nginx         => 'projects/shared/drupal.nginx.conf.erb',
     php           => '5.4.41',
   }
+
+  php::extension::imagick { 'imagick for 5.4.41':
+    php     => '5.4.41',
+    version => '3.1.2'
+  }
 }
