@@ -27,7 +27,6 @@ boxen::personal::osx_apps:
   - alfred
   - bettertouchtool
   - cheatsheet
-  - facter
   - flux
   - graphviz
   - hiera
@@ -35,7 +34,6 @@ boxen::personal::osx_apps:
   - iterm2
   - limechat
   - mac2imgur
-  - puppet
   - radiant-player
   - sketch
   - vagrant
