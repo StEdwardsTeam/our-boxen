@@ -13,4 +13,9 @@ class projects::www {
     php     => '5.4.41',
     version => '3.1.2'
   }
+
+  php::extension::xdebug { 'xdebug for 5.4.41':
+    php     => '5.4.41',
+    version => '2.3.3'
+  }
 }
