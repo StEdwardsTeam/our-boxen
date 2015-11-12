@@ -1,5 +1,14 @@
 ---
 boxen::personal::osx_apps:
+  - 1password
+  - atom
+  - box-sync
+  - firefox
+  - flux
+  - google-chrome
+  - sizeup
+  - slack
+  - sourcetree
   - intellij-idea
   # - navicat-for-mysql
 
