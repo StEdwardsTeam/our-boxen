@@ -29,11 +29,14 @@ boxen::personal::osx_apps:
   - cheatsheet
   - flux
   - graphviz
+  - heroku-toolbelt
   - intellij-idea
   - iterm2
   - limechat
   - mac2imgur
+  - phpstorm
   - radiant-player
+  - rubymine
   - sketch
   - vagrant
   - vagrant-manager
