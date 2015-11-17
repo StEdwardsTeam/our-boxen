@@ -1,6 +1,7 @@
 ---
 boxen::personal::osx_apps:
   - balsamiq-mockups
+  - browserstacklocal
   - silverback
   - 1password
   - atom
