@@ -10,3 +10,5 @@ boxen::personal::osx_apps:
   - sizeup
   - slack
   - sourcetree
+
+drupal7::php_version: '5.6.15'

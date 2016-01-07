@@ -2,7 +2,7 @@ class projects::holycross {
 
   require projects::drupal_7
 
-  $php_version = '5.6.15'
+  $php_version = hiera(drupal7::php_version)
 
   php::project { 'holycross':
     source        => 'StEdwardsTeam/holycrossinstitute',

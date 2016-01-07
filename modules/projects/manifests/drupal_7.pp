@@ -3,7 +3,7 @@ class projects::drupal_7 {
   require php::composer
   require mysql
 
-  $php_version = '5.6.15'
+  $php_version = hiera(drupal7::php_version)
 
   php::extension::imagick { "imagick for ${php_version}":
     php     => $php_version,
