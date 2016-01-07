@@ -1,6 +1,7 @@
 class projects::drupal_7 {
 
-  include php::composer
+  require php::composer
+  require mysql
 
   $php_version = '5.6.15'
 

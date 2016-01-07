@@ -1,6 +1,6 @@
 class projects::www {
 
-  include projects::drupal_7
+  require projects::drupal_7
 
   $php_version = '5.6.15'
 
