@@ -5,3 +5,4 @@
 # of how Puppet's custom resource providers work.
 
 # homebrew_root: /usr/local
+drupal_environment: local

@@ -1,4 +1,6 @@
 ---
+boxen::config::hiera_merge_hierarchy: true
+
 atom::packages:
   - atom-jasmine
   - color-picker
@@ -23,11 +25,13 @@ boxen::personal::homebrew_packages:
   - rename
   - tree
 
+boxen::personal::includes:
+  - git
+
 boxen::personal::osx_apps:
   - alfred
   - bettertouchtool
   - cheatsheet
-  - flux
   - graphviz
   - heroku-toolbelt
   - intellij-idea
