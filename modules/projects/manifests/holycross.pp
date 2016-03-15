@@ -5,7 +5,7 @@ class projects::holycross {
   $php_version = hiera(drupal7::php_version)
 
   php::project { 'holycross':
-    source        => 'StEdwardsTeam/holycrossinstitute',
+    source        => 'stedwards/holycrossinstitute',
     mysql         => true,
     nginx         => 'projects/shared/drupal.nginx.conf.erb',
     php           => $php_version,

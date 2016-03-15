@@ -5,7 +5,7 @@ class projects::forms {
   $php_version = hiera(drupal7::php_version)
 
   php::project { 'forms':
-    source        => 'StEdwardsTeam/forms',
+    source        => 'stedwards/forms',
     mysql         => true,
     nginx         => 'projects/shared/drupal.nginx.conf.erb',
     php           => $php_version,
