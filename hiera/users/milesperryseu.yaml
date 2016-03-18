@@ -1,0 +1,11 @@
+---
+boxen::personal::osx_apps:
+  - eclipse-jee
+  - filezilla
+  - keka
+  - toad
+  - virtualbox
+  - vmware-fusion
+
+# source dir
+boxen::config::srcdir: "/Users/%{::boxen_user}/dev/apps/projects"
