@@ -1,6 +1,7 @@
 class people::milesperryseu {
 
   include projects::forms
+  include projects::www
 
   $home = "/Users/${::boxen_user}"
 
