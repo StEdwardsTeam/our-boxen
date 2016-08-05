@@ -52,5 +52,7 @@ boxen::personal::osx_apps:
 boxen::config::srcdir: "/Users/%{::boxen_user}/code"
 
 nodejs::version::alias:
-  "0.10": "0.10.40"
-  "0.12": "0.12.7"
+  "0.10": "0.10.44"
+  "0.12": "0.12.13"
+  "4.3": "4.3.2"
+  "5.10": "5.10.1"

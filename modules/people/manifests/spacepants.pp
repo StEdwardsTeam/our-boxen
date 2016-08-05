@@ -4,7 +4,7 @@ class people::spacepants {
 
   $nodejs_version  = "0.12"
   $python_version  = "2.7.8"
-  $ruby_version    = "2.1.2"
+  $ruby_version    = "2.1.7"
 
   $home            = "/Users/${::boxen_user}"
   $code            = "${home}/code"
@@ -91,9 +91,6 @@ class people::spacepants {
   package { 'ffmpeg':
     install_options => [ '--with-libvpx' ]
   }
-
-  # old ass ruby for legacy puppet support
-  ruby::version { '1.8.7': }
 
   homebrew::tap { 'homebrew/binary': }
 

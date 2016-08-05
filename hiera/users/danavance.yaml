@@ -1,7 +1,0 @@
----
-boxen::personal::osx_apps:
-  - intellij-idea
-  # - navicat-for-mysql
-
-# source dir
-boxen::config::srcdir: "/Users/%{::boxen_user}/Sites"
