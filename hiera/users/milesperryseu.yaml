@@ -15,6 +15,9 @@ boxen::personal::osx_apps:
   - slack
   - sourcetree
 
+boxen::personal::homebrew_packages:
+  - perl
+
 # global defaults
 drupal7::php_version: '5.6.15'
 
