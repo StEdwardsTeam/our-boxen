@@ -14,4 +14,9 @@ class projects::drupal_7 {
     php     => $php_version,
     version => '2.3.3'
   }
+
+  php::extension::xhprof { 'xhprof for ${php_version}':
+    php     => $php_version,
+    version => '0.9.4'
+  }
 }
