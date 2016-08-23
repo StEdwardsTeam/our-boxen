@@ -19,7 +19,6 @@ boxen::personal::homebrew_packages:
   - asciinema
   - bash-completion
   - grc
-  - libjpeg
   - lua
   - maven
   - ngrep
