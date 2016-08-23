@@ -19,9 +19,11 @@ boxen::personal::homebrew_packages:
   - asciinema
   - bash-completion
   - grc
+  - libjpeg
   - lua
   - maven
   - ngrep
+  - optipng
   - packer
   - rename
   - tree
@@ -33,6 +35,7 @@ boxen::personal::osx_apps:
   - alfred
   - bettertouchtool
   - cheatsheet
+  - gitkraken
   - graphviz
   - heroku-toolbelt
   - intellij-idea
@@ -40,6 +43,7 @@ boxen::personal::osx_apps:
   - limechat
   - mac2imgur
   - phpstorm
+  - postman
   - radiant-player
   - rubymine
   - sketch
@@ -51,6 +55,8 @@ boxen::personal::osx_apps:
 # source dir
 boxen::config::srcdir: "/Users/%{::boxen_user}/code"
 
+nodejs::build::ensure: '61824e7d196024c4fb461613de77792f849204b9'
+nodejs::global::version: '4.3.2'
 nodejs::version::alias:
   "0.10": "0.10.44"
   "0.12": "0.12.13"

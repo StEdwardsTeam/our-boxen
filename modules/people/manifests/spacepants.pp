@@ -2,7 +2,7 @@ class people::spacepants {
 
   include python
 
-  $nodejs_version  = "0.12"
+  $nodejs_version  = "4.3.2"
   $python_version  = "2.7.8"
   $ruby_version    = "2.1.7"
 
@@ -98,31 +98,31 @@ class people::spacepants {
 
   npm_module { "bower for ${nodejs_version}":
     module       => 'bower',
-    version      => '~> 1.6.8',
+    version      => '~> 1.7.9',
     node_version => $nodejs_version,
   }
 
   npm_module { "grunt-cli for ${nodejs_version}":
     module       => 'grunt-cli',
-    version      => '~> 0.1.13',
+    version      => '~> 1.2.0',
     node_version => $nodejs_version,
   }
 
   npm_module { "gulp for ${nodejs_version}":
     module       => 'gulp',
-    version      => '~> 3.9.0',
+    version      => '~> 3.9.1',
     node_version => $nodejs_version,
   }
 
   npm_module { "phonegap for ${nodejs_version}":
     module       => 'phonegap',
-    version      => '~> 5.3.9',
+    version      => '~> 6.3.0',
     node_version => $nodejs_version,
   }
 
   npm_module { "yeoman for ${nodejs_version}":
     module       => 'yo',
-    version      => '~> 1.5.0',
+    version      => '~> 1.8.4',
     node_version => $nodejs_version,
   }
 
@@ -137,6 +137,8 @@ class people::spacepants {
   }
 
   class { 'python::global': version => $python_version }
+
+  nodejs::version { $nodejs_version: }
 
   include projects::all
 }
