@@ -38,11 +38,11 @@ github "module_data", "0.0.4", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "brewcask",    "0.0.6"
+github "brewcask",    "0.0.7"
 github "dnsmasq",     "2.0.1"
 github "foreman",     "1.2.0"
 github "gcc",         "3.0.2"
-github "git",         "2.9.0"
+github "git",         "2.10.0"
 github "go",          "2.1.0"
 github "homebrew",    "2.0.2"
 github "hub",         "1.4.3"
