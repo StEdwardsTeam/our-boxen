@@ -83,6 +83,14 @@ node default {
     ]:
   }
 
+  # El Cap doesn't provide Openssl dev resources any more, so let's use
+  # OpenSSL from Homebrew (with all the headers and things) in order to build
+  # PHP on El Cap
+  package { 'homebrew/versions/openssl098':
+    ensure => absent
+  }
+  package { 'homebrew/versions/openssl101': }
+
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
