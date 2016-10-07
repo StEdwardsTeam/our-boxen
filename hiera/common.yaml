@@ -13,3 +13,5 @@ boxen::personal::osx_apps:
 
 # global defaults
 drupal7::php_version: '5.6.23'
+drupal6::php_version: '5.5.25'
+phpweb::php_version: '5.4.41'

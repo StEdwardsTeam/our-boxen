@@ -1,9 +1,9 @@
-class projects::drupal_7 {
+class projects::drupal_6 {
 
   require php::composer
   require mysql
 
-  $php_version = hiera(drupal7::php_version)
+  $php_version = hiera(drupal6::php_version)
 
   php::extension::imagick { "imagick for ${php_version}":
     php     => $php_version,

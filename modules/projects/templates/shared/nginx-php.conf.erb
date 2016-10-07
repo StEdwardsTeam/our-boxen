@@ -1,0 +1,29 @@
+server {
+  access_log <%= scope.lookupvar "nginx::config::logdir" %>/<%= @name %>.access.log main;
+  listen 80;
+  root <%= @repo_dir %>/app/webroot/;
+  index index.php;
+  server_name <%= @server_name %>;
+
+  client_max_body_size 50M;
+
+  error_page 500 502 503 504 /50x.html;
+
+  index index.php;
+
+  location / {
+    try_files $uri $uri/ /index.php?$uri&$args;
+  }
+
+  location ~ .php$ {
+    include <%= scope.lookupvar "nginx::config::configdir" %>/fastcgi_params;
+    keepalive_timeout 0;
+    fastcgi_index index.php;
+    fastcgi_pass unix:<%= scope.lookupvar "boxen::config::socketdir" %>/<%= @name %>;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+
+    fastcgi_read_timeout 3600s;
+    client_body_timeout 3600s;
+    send_timeout 3600s;
+  }
+}
