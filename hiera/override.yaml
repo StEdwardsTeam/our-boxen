@@ -1,0 +1,3 @@
+---
+# Set hiera's merge strategy
+boxen::config::hiera_merge_hierarchy: true

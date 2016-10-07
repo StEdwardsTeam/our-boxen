@@ -1,15 +1,23 @@
 ---
+# Homebrew packages
+boxen::personal::homebrew_packages:
+  - curl
+
 # Apps everyone should have.
 boxen::personal::osx_apps:
   - 1password
+  - alfred
   - atom
+  - bettertouchtool
   - box-sync
+  - cheatsheet
   - firefox
   - flux
+  - gitkraken
   - google-chrome
+  - iterm2
   - sizeup
   - slack
-  - sourcetree
 
 # global defaults
 drupal7::php_version: '5.6.23'
