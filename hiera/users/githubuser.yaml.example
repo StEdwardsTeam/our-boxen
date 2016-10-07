@@ -9,6 +9,4 @@ boxen::personal::includes:
   - git
 
 boxen::personal::osx_apps:
-  - balsamiq-mockups
-  - browserstacklocal
-  - silverback
+  - slack

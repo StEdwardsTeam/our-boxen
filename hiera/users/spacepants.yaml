@@ -1,6 +1,8 @@
 ---
-boxen::config::hiera_merge_hierarchy: true
+# source dir
+boxen::config::srcdir: "/Users/%{::boxen_user}/code"
 
+# atom packages
 atom::packages:
   - atom-jasmine
   - color-picker
@@ -31,14 +33,9 @@ boxen::personal::includes:
   - git
 
 boxen::personal::osx_apps:
-  - alfred
-  - bettertouchtool
-  - cheatsheet
-  - gitkraken
   - graphviz
   - heroku-toolbelt
   - intellij-idea
-  - iterm2
   - limechat
   - mac2imgur
   - phpstorm
@@ -50,9 +47,6 @@ boxen::personal::osx_apps:
   - vagrant-manager
   - virtualbox
   - xtrafinder
-
-# source dir
-boxen::config::srcdir: "/Users/%{::boxen_user}/code"
 
 nodejs::build::ensure: '61824e7d196024c4fb461613de77792f849204b9'
 nodejs::global::version: '4.3.2'

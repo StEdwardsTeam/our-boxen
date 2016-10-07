@@ -1,8 +1,13 @@
 ---
+boxen::personal::homebrew_packages:
+  - tree
+
+boxen::personal::includes:
+  - git
+
 boxen::personal::osx_apps:
   - cornerstone
   - cyberduck
   - eclipse-java
   - intellij-idea
-#  - navicat-for-mysql
   - textwrangler
