@@ -1,0 +1,40 @@
+<?php
+
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => '<%= @project_name %>_development',
+      'username' => 'root',
+      'password' => '',
+      'host' => '127.0.0.1',
+      'port' => '13306',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
+
+// $databases = array (
+//   'default' =>
+//   array (
+//     'default' =>
+//     array (
+//       'database' => '<%= @project_name %>_test',
+//       'username' => 'root',
+//       'password' => '',
+//       'host' => '127.0.0.1',
+//       'port' => '13306',
+//       'driver' => 'mysql',
+//       'prefix' => '',
+//     ),
+//   ),
+// );
+
+// disable sending email
+$conf['mail_system'] = array(
+  'default-system' => 'DevelMailLog',
+);
+
+$base_url = 'http://<%= @project_name %>.dev';
