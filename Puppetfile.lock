@@ -71,7 +71,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.7.0)
+    nginx (1.8.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -180,7 +180,7 @@ DEPENDENCIES
   libtool (= 1.0.0)
   module_data (= 0.0.4)
   mysql (= 2.2.2)
-  nginx (= 1.7.0)
+  nginx (= 1.8.0)
   nodejs (= 5.0.9)
   openssl (= 1.0.0)
   osx (= 2.8.0)
