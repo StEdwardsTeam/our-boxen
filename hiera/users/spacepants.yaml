@@ -20,7 +20,9 @@ atom::packages:
 boxen::personal::homebrew_packages:
   - asciinema
   - bash-completion
+  - graphviz
   - grc
+  - heroku
   - lua
   - maven
   - ngrep
@@ -33,10 +35,7 @@ boxen::personal::includes:
   - git
 
 boxen::personal::osx_apps:
-  - graphviz
-  - heroku-toolbelt
   - intellij-idea
-  - limechat
   - mac2imgur
   - phpstorm
   - postman
@@ -46,7 +45,6 @@ boxen::personal::osx_apps:
   - vagrant
   - vagrant-manager
   - virtualbox
-  - xtrafinder
 
 nodejs::build::ensure: '61824e7d196024c4fb461613de77792f849204b9'
 nodejs::global::version: '4.3.2'
@@ -54,4 +52,6 @@ nodejs::version::alias:
   "0.10": "0.10.44"
   "0.12": "0.12.13"
   "4.3": "4.3.2"
-  "5.10": "5.10.1"
+  "4.4": "4.4.7"
+  "5.12": "5.12.0"
+  "6.3": "6.3.1"
