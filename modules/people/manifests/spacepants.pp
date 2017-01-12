@@ -4,7 +4,7 @@ class people::spacepants {
 
   $nodejs_version  = "4.3.2"
   $python_version  = "2.7.8"
-  $ruby_version    = "2.1.7"
+  $ruby_version    = "2.2.6"
 
   $home            = "/Users/${::boxen_user}"
   $code            = "${home}/code"
@@ -139,6 +139,15 @@ class people::spacepants {
   class { 'python::global': version => $python_version }
 
   nodejs::version { $nodejs_version: }
+
+  sudoers { 'installer':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      '(ALL) SETENV:NOPASSWD: /usr/sbin/installer',
+    ],
+    type     => 'user_spec',
+  }
 
   include projects::all
 }
