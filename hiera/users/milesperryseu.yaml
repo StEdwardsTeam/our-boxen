@@ -10,7 +10,4 @@ boxen::personal::includes:
 
 boxen::personal::osx_apps:
   - eclipse-jee
-  - filezilla
-  - keka
-  - virtualbox
   - vmware-fusion
