@@ -35,8 +35,8 @@ boxen::personal::includes:
   - git
 
 boxen::personal::osx_apps:
+  - bettertouchtool
   - intellij-idea
-  - mac2imgur
   - phpstorm
   - postman
   - radiant-player
