@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.11.1"
+github "boxen", "3.12.0"
 
 # Support for default hiera data in modules
 
@@ -42,7 +42,7 @@ github "brewcask",    "0.0.8"
 github "dnsmasq",     "2.0.2"
 github "foreman",     "1.2.0"
 github "gcc",         "3.0.3"
-github "git",         "2.11.0"
+github "git",         "2.12.2"
 github "go",          "2.1.0"
 github "homebrew",    "2.1.0"
 github "hub",         "1.4.4"
