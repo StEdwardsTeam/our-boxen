@@ -6,4 +6,6 @@ class people::nfoxley {
 
   homebrew::tap { 'homebrew/binary': }
 
+  include projects::seui
+
 }
