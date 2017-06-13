@@ -4,6 +4,8 @@ class people::milesperryseu {
 
   homebrew::tap { 'homebrew/binary': }
 
+  include projects::seui
+
   file { "${home}/dev":
     ensure => directory,
   } ->
