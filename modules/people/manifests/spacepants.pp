@@ -2,7 +2,7 @@ class people::spacepants {
 
   include python
 
-  $nodejs_version  = "4.3.2"
+  $nodejs_version  = "8.1.0"
   $python_version  = "2.7.8"
   $ruby_version    = "2.2.6"
 
@@ -98,7 +98,13 @@ class people::spacepants {
 
   npm_module { "bower for ${nodejs_version}":
     module       => 'bower',
-    version      => '~> 1.7.9',
+    version      => '~> 1.8.0',
+    node_version => $nodejs_version,
+  }
+
+  npm_module { "foundation-cli for ${nodejs_version}":
+    module       => 'foundation-cli',
+    version      => '~> 2.1.0',
     node_version => $nodejs_version,
   }
 
