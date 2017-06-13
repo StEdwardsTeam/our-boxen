@@ -2,6 +2,8 @@ class people::milesperryseu {
 
   $home = "/Users/${::boxen_user}"
 
+  homebrew::tap { 'homebrew/binary': }
+
   file { "${home}/dev":
     ensure => directory,
   } ->
