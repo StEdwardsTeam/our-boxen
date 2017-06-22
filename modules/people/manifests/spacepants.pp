@@ -3,7 +3,7 @@ class people::spacepants {
   include python
 
   $nodejs_version  = "8.1.0"
-  $python_version  = "2.7.8"
+  $python_version  = "2.7.10"
   $ruby_version    = "2.3.1"
 
   $home            = "/Users/${::boxen_user}"
