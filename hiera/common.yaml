@@ -19,8 +19,8 @@ boxen::personal::osx_apps:
   - slack
 
 # global defaults
-drupal7::php_version: '5.6.23'
-drupal6::php_version: '5.5.25'
+drupal7::php_version: '5.6.30'
+drupal6::php_version: '5.4.45'
 nodejs::build::ensure: '5dbf25357bfb33c10fb148b99d0e21e6b4a11dd3'
 nodejs::global::version: '8.1.0'
-phpweb::php_version: '5.4.41'
+phpweb::php_version: '7.0.20'
