@@ -5,6 +5,10 @@ class people::milesperryseu {
   homebrew::tap { 'homebrew/binary': }
 
   include projects::seui
+  include projects::photolookup
+
+  $nodejs_version = '8.1.0'
+  nodejs::version { $nodejs_version: }
 
   file { "${home}/dev":
     ensure => directory,
