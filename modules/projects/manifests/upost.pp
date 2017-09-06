@@ -2,7 +2,7 @@ class projects::upost {
 
   include php::composer
 
-  $php_version = hiera(phpweb::php_version)
+  $php_version = hiera(drupal6::php_version)
 
   php::project { 'upost':
     source        => 'git@bitbucket.org:stedwards/upost.git',

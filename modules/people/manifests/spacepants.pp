@@ -1,10 +1,11 @@
 class people::spacepants {
 
   include python
+  include sdkman
 
   $nodejs_version  = "8.1.0"
-  $python_version  = "2.7.8"
-  $ruby_version    = "2.2.6"
+  $python_version  = "2.7.10"
+  $ruby_version    = "2.3.1"
 
   $home            = "/Users/${::boxen_user}"
   $code            = "${home}/code"
