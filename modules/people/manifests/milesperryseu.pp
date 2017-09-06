@@ -5,6 +5,7 @@ class people::milesperryseu {
   homebrew::tap { 'homebrew/binary': }
 
   include projects::seui
+  include projects::photolookup
 
   file { "${home}/dev":
     ensure => directory,
