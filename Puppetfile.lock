@@ -166,7 +166,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: stedwards/puppet-sdkman
   specs:
-    sdkman (1.1.0)
+    sdkman (1.1.1)
 
 DEPENDENCIES
   autoconf (= 1.0.0)
@@ -198,7 +198,7 @@ DEPENDENCIES
   redis (= 3.2.0)
   repository (= 2.4.1)
   ruby (= 8.5.7)
-  sdkman (= 1.1.0)
+  sdkman (= 1.1.1)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
   wget (= 1.0.1)
