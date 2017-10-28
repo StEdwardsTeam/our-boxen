@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.12.0"
+github "boxen", "3.13.0"
 
 # Support for default hiera data in modules
 
@@ -39,21 +39,21 @@ github "module_data", "0.0.4", :repo => "ripienaar/puppet-module-data"
 # some/most of these if you want, but it's not recommended.
 
 github "brewcask",    "0.0.10"
-github "dnsmasq",     "2.0.2"
+github "dnsmasq",     "2.0.4"
 github "foreman",     "1.2.0"
-github "gcc",         "3.0.3"
+# mod "gcc", "0.0.1", :git => "https://github.com/boxen/puppet-gcc.git", :ref => "abc7639"
 github "git",         "2.13.0"
 github "go",          "2.1.0"
 github "homebrew",    "2.1.0"
-github "hub",         "1.4.4"
+github "hub",         "1.4.5"
 github "inifile",     "1.4.1", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",       "1.8.0"
+github "nginx",       "1.9.0"
 github "nodejs",      "5.0.9"
 github "openssl",     "1.0.0"
 github "phantomjs",   "3.0.0"
 github "pkgconfig",   "1.0.0"
 github "repository",  "2.4.1"
-github "ruby",        "8.5.7"
+github "ruby",        "8.6.0"
 github "stdlib",      "4.7.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
@@ -61,8 +61,10 @@ github "xquartz",     "1.2.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 # github "elasticsearch", "2.8.0"
+# github "mysql",         "2.0.1"
+# github "postgresql",  "4.0.1"
+# github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
-github "autoconf",    "1.0.0"
 github "imagemagick", "1.3.0"
 github "libpng",      "1.0.0"
 github "libtool",     "1.0.0"
