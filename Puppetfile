@@ -70,10 +70,13 @@ github "libpng",      "1.0.0"
 github "libtool",     "1.0.0"
 github "mysql",       "2.2.3"
 github "pcre",        "1.0.0"
-github "php",         "2.0.11", :repo => "stedwards/puppet-php"
 github "postgresql",  "5.0.0"
 github "osx",         "2.8.0"
 github "python",      "3.1.0", :repo => "mloberg/puppet-python"
 github "redis",       "3.2.0"
 github "sdkman",      "1.1.2", :repo => "stedwards/puppet-sdkman"
 github "wget",        "1.0.1"
+
+mod "php",
+  :git => "https://github.com/boxen/puppet-php.git",
+  :ref => "b5aeda34901482e1219456c8f9294ba2fedbfaf4"

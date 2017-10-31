@@ -3,7 +3,7 @@ class people::spacepants {
   include python
   include sdkman
 
-  $nodejs_version  = "8.1.0"
+  $nodejs_version  = "8.1.4"
   $python_version  = "2.7.10"
   $ruby_version    = "2.3.1"
 
@@ -99,13 +99,13 @@ class people::spacepants {
 
   npm_module { "bower for ${nodejs_version}":
     module       => 'bower',
-    version      => '~> 1.8.0',
+    version      => '~> 1.8.2',
     node_version => $nodejs_version,
   }
 
   npm_module { "foundation-cli for ${nodejs_version}":
     module       => 'foundation-cli',
-    version      => '~> 2.1.0',
+    version      => '~> 2.2.5',
     node_version => $nodejs_version,
   }
 
@@ -121,15 +121,15 @@ class people::spacepants {
     node_version => $nodejs_version,
   }
 
-  npm_module { "phonegap for ${nodejs_version}":
-    module       => 'phonegap',
-    version      => '~> 6.3.0',
+  npm_module { "yarn for ${nodejs_version}":
+    module       => 'yarn',
+    version      => '~> 1.2.1',
     node_version => $nodejs_version,
   }
 
   npm_module { "yeoman for ${nodejs_version}":
     module       => 'yo',
-    version      => '~> 1.8.4',
+    version      => '~> 2.0.0',
     node_version => $nodejs_version,
   }
 

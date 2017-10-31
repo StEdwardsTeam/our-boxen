@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/boxen/puppet-php.git
+  ref: b5aeda34901482e1219456c8f9294ba2fedbfaf4
+  sha: b5aeda34901482e1219456c8f9294ba2fedbfaf4
+  specs:
+    php (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -149,11 +156,6 @@ GITHUBTARBALL
     module_data (0.0.4)
 
 GITHUBTARBALL
-  remote: stedwards/puppet-php
-  specs:
-    php (2.0.11)
-
-GITHUBTARBALL
   remote: stedwards/puppet-sdkman
   specs:
     sdkman (1.1.2)
@@ -179,7 +181,7 @@ DEPENDENCIES
   osx (= 2.8.0)
   pcre (= 1.0.0)
   phantomjs (= 3.0.0)
-  php (= 2.0.11)
+  php (>= 0)
   pkgconfig (= 1.0.0)
   postgresql (= 5.0.0)
   python (= 3.1.0)

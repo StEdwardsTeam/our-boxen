@@ -1,7 +1,7 @@
 ---
 # Homebrew packages
-boxen::personal::homebrew_packages:
-  - curl
+# boxen::personal::homebrew_packages:
+#   - curl
 
 # Apps everyone should have.
 boxen::personal::osx_apps:
@@ -21,6 +21,6 @@ boxen::personal::osx_apps:
 # global defaults
 drupal7::php_version: '5.6.30'
 drupal6::php_version: '5.4.45'
-nodejs::build::ensure: '5dbf25357bfb33c10fb148b99d0e21e6b4a11dd3'
-nodejs::global::version: '8.1.0'
+nodejs::build::ensure: '3f556a49b604c214c1f4baaa75d078282ae71a48'
+nodejs::global::version: '8.1.4'
 phpweb::php_version: '7.0.20'
